@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartmani Krcmar</title>
+
+    <!-- Bootstrap v5.2.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <!-- My styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;500&family=Dancing+Script:wght@400;700&family=Merriweather&family=Montserrat:wght@400;900&family=Sacramento&family=Ubuntu&display=swap"
+      rel="stylesheet" />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/a3c7177812.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section id="title">
+      <!-- NAV BAR -->
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand fade-in" href="index.html"
+          ><img class="logo-img" src="images/Logo.png" alt="logo-img"
+        /></a>
+        <button
+          class="menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+          <svg width="60" height="60" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <br />
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Početna strana</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lokacija">Lokacija</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galery.html">Galerija</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#links">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- TITLE -->
+
+      <div class="container-fluid">
+        <div class="title">
+          <div class="row">
+            <div class="col-lg-6 col-image">
+              <h1 class="fade-in title-text">
+                Dobrodošli u apartmane <br /><br />
+                "Krčmar"
+              </h1>
+              <!-- <button class="btn download-button" type="button">
+                <i class="fa-brands fa-google-play"></i> Download
+              </button>
+              <button class="btn download-button" type="button">
+                <i class="fa-brands fa-apple"></i> Download
+              </button> -->
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="title-img fade-in"
+                src="Apartmani media/Screenshot 2023-03-18 at 03-23-22 Krcmar Divcibare (@apartmani_krcmar_divcibare) • Instagram photos and videos.png"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APARTMANI -->
+
+    <section id="apartmani">
+      <div class="h2">Apartmani</div>
+      <hr />
+      <div class="container-fluid">
+        <div class="row card-section-style">
+          <div class="col-lg-6 card-size">
+            <div class="card" style="width: 18rem">
+              <div id="carouselKrcmar1Indicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselKrcmar1Indicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselKrcmar1Indicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselKrcmar1Indicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Apartmani media/Krcmar 1-2.png"
+                      class="card-img-top"
+                      alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Apartmani media/Krcmar 1-1.png"
+                      class="d-block w-100"
+                      alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Apartmani media/Krcmar 1-3.png"
+                      class="d-block w-100"
+                      alt="..." />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselKrcmar1Indicators"
+                  data-bs-slide="prev">
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselKrcmar1Indicators"
+                  data-bs-slide="next">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselKrcmar1Indicators"
+                  data-bs-slide="next">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Krčmar 1</h5>
+                <p class="card-text"></p>
+                <ul style="text-align: left">
+                  <li>Kompletno opremljena kuhinja</li>
+                  <li>Wi-Fi i kablovska televizija</li>
+                  <li>peškiri i posteljina</li>
+                  <li>fen</li>
+                  <li>terasa</li>
+                  <li>parking ispred zgrade</li>
+                  <li>bračni krevet 160 x 200</li>
+                  <li>pomoćni ležaj na razvlačenje</li>
+                </ul>
+
+                <a href="reservation.html" class="btn btn-primary">Rezerviši</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 card-size">
+            <div class="card" style="width: 18rem">
+              <div id="carouselKrcmar2Indicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselKrcmar2Indicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselKrcmar2Indicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselKrcmar2Indicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselKrcmar2Indicators"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="Apartmani media/Krcmar 2-1.png"
+                      class="card-img-top"
+                      alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Apartmani media/Krcmar 2-2.png"
+                      class="d-block w-100"
+                      alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Apartmani media/Krcmar 2-3.png"
+                      class="d-block w-100"
+                      alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="Apartmani media/Krcmar 2-4.png"
+                      class="d-block w-100"
+                      alt="..." />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselKrcmar2Indicators"
+                  data-bs-slide="prev">
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselKrcmar2Indicators"
+                  data-bs-slide="next">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselKrcmar2Indicators"
+                  data-bs-slide="next">
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Krčmar 2</h5>
+                <p class="card-text"></p>
+                <ul style="text-align: left">
+                  <li>Kompletno opremljena kuhinja</li>
+                  <li>Wi-Fi i kablovska televizija</li>
+                  <li>peškiri i posteljina</li>
+                  <li>fen</li>
+                  <li>terasa</li>
+                  <li>parking ispred zgrade</li>
+                  <li>bračni krevet 160 x 200</li>
+                  <li>pomoćni ležaj na razvlačenje</li>
+                </ul>
+
+                <a href="reservation.html" class="btn btn-primary">Rezerviši</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 feature-space">
+          <i class="fa-solid fa-mountain-sun"></i>
+          <p>Pobegnite iz grada i uživajte u čistom planinskom vazduhu</p>
+        </div>
+        <div class="col-lg-4 col-md-12 feature-space">
+          <i class="fa-solid fa-water"></i>
+          <p>
+            Uslužni bazen se nalazi nedaleko od nas <br />
+            <em style="color: #003049; font-size: 1rem"
+              >(u sklopu hotela "Crni vrh")</em
+            >
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-12 feature-space">
+          <i class="fa-solid fa-person-hiking"></i>
+          <p>Istražite okolnu prirodu</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+      <p class="utisci">Utisci</p>
+      <div
+        id="carouselReviewControls"
+        class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="font-light">
+              Smeštaj i lokacija su fenomenalni. Doći ćemo opet.
+            </p>
+            <!-- <img
+              src="images/free-stock-photos-people_102217-2591248159.jpeg"
+              class="review-images"
+              alt="..."
+            /> -->
+            <em>Marko Petrić</em>
+          </div>
+          <div class="carousel-item">
+            <p class="font-light">
+              Idealno mesto za pobeći iz grada na par dana.
+            </p>
+            <!-- <img
+              src="images/pexels-photo-736716-1603051364.jpeg"
+              class="review-images"
+              alt="..."
+            /> -->
+            <em>Jelena Ilić</em>
+          </div>
+          <div class="carousel-item">
+            <p class="font-light">
+              Smeštaj i kvalitet usluge je super. Dolazimo opet.
+            </p>
+            <!-- <img
+              src="images/pexels-photo-736716-1603051364.jpeg"
+              class="review-images"
+              alt="..."
+            /> -->
+            <em>Marija Jakovljević</em>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselReviewControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselReviewControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr style="color: aliceblue" />
+    </section>
+
+    <!-- LOKACIJA -->
+    <section id="lokacija">
+      <p class="utisci">Kako do nas</p>
+      <br />
+      <div class="row">
+        <div class="col-md-12">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26475.255398783378!2d19.997738518895215!3d44.11611452977966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759dd9f69ca8675%3A0x8185e6350f3a36e!2zRGl2xI1pYmFyZSBzbWXFoXRhag!5e0!3m2!1ssr!2srs!4v1679091199572!5m2!1ssr!2srs"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS & CONTACT -->
+    <section id="links">
+      <div>
+        <h3>
+          Posetite nas klikom ka društvenim mrežama ili pošaljite upit za sve
+          što Vas zanima putem <i><strong>Whats Up</strong></i> ili
+          <strong><i>Mail</i></strong> linka ispod ili nas pozovite klikom na
+          slušalicu.
+        </h3>
+      </div>
+      <div class="links-style">
+        <img class="logo-img" src="images/Logo.png" alt="logo-img" />
+      </div>
+      <p style="text-align: center">Kontaktirajte nas putem linkova ispod</p>
+      <hr />
+      <div class="links">
+        <p class="links-style">
+          <a href="https://www.facebook.com/profile.php?id=100088866143126"
+            ><i class="fa-brands fa-facebook links-font-size"></i
+          ></a>
+          <a
+            class="links-style"
+            href="https://www.instagram.com/apartmani_krcmar_divcibare/"
+            ><i class="fa-brands fa-instagram links-font-size"></i
+          ></a>
+          <a
+            href="https://wa.me/+38163289170?text=Pozdrav.%20Interesuju%20me%20sledeći%20datumi:%20"
+            ><i class="fa-brands fa-whatsapp links-font-size"></i
+          ></a>
+          <a href="mailto:apartmankrcmar@gmail.com"
+            ><i class="fa-solid fa-envelope links-font-size"></i
+          ></a>
+          <a href="tel:+38163289170"
+            ><i class="fa-solid fa-phone links-font-size"></i
+          ></a>
+        </p>
+        <hr />
+      </div>
+    </section>
+
+    <!-- Bootstrap v5.2.3 script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
