@@ -61,7 +61,7 @@ em {
 /* NAVIGATION BAR */
 
 .navbar {
-  padding: 1% 10% 1%;
+  padding: 0.5% 10% 0.5%;
   background-color: #fdf0d5;
 }
 
@@ -361,6 +361,22 @@ a {
 /* SCREEN OPTIMIZATION */
 
 @media only screen and (min-width: 992px) {
+  .logo-img {
+    padding-top: 0%;
+    width: 160px;
+  }
+
+  .navbar-nav {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    color: #003049;
+  }
 
   .title-img {
     position: static;
@@ -375,6 +391,10 @@ a {
 
   .title-text {
     margin-top: 15%;
+  }
+
+  .card {
+    width: 23rem;
   }
 
   .container-fluid .galerija-text {
@@ -410,8 +430,12 @@ a {
 }
 
 @media only screen and (min-width: 460px) and (max-width: 992px) {
-  
-  
+
+  .navbar {
+    padding: 1% 10% 1%;
+    background-color: #fdf0d5;
+  }
+
   .title-img {
     width: 450px;
     margin: 6px 0;
@@ -458,10 +482,19 @@ a {
   #links {
     padding: 2% 20%;
   }
-  
+
+  .card {
+    width: 18rem;
+  }
 }
 
 @media only screen and (max-width: 460px) {
+
+  .navbar {
+    padding: 1% 10% 1%;
+    background-color: #fdf0d5;
+  }
+  
   .title-img {
     width: 100%;
   }
@@ -475,6 +508,10 @@ a {
     padding-top: 20%;
   }
 
+  .card {
+    width: 18rem;
+  }
+
   /* #title.container-fluid {
     padding: 0%;
   } */
@@ -486,7 +523,7 @@ a {
     padding-top: 15%;
   }
 
-  .container-fluid .galery-title{
+  .container-fluid .galery-title {
     padding-bottom: 5%;
   }
 
@@ -496,14 +533,14 @@ a {
     width: 70%;
   }
 
-.map { 
-  width: 100%; 
- }
+  .map {
+    width: 100%;
+  }
 }
 
 .alert-success {
   z-index: 1;
-  background-color: #D4edda;
+  background-color: #d4edda;
   font-size: 14px;
   font-weight: 700;
   padding: 20px 40px;
