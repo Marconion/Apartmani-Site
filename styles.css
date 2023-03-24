@@ -143,6 +143,7 @@ em {
 }
 .card {
   margin: auto;
+  width: 18rem;
 }
 
 .card-size {
@@ -430,7 +431,6 @@ a {
 }
 
 @media only screen and (min-width: 460px) and (max-width: 992px) {
-
   .navbar {
     padding: 1% 10% 1%;
     background-color: #fdf0d5;
@@ -489,12 +489,11 @@ a {
 }
 
 @media only screen and (max-width: 460px) {
-
   .navbar {
     padding: 1% 10% 1%;
     background-color: #fdf0d5;
   }
-  
+
   .title-img {
     width: 100%;
   }
